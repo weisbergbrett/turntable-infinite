@@ -1,0 +1,27 @@
+{
+	"name": "Turntable Infinite",
+   	"version": "0.0.0.1",
+		"manifest_version": 2,
+	"description": "A basic extension for Turntable.fm to bring strictly UX/UI changes and additions.",
+   	"permissions":[
+		"https://turntable.fm/"
+	],
+	"content_scripts":[
+		{
+			"matches": ["https://turntable.fm/*"],
+			"exclude_globs": [
+			  "https://turntable.fm/",
+			  "https://turntable.fm/lobby",
+			  "https://turntable.fm/about",
+			  "https://turntable.fm/jobs",
+			  "https://turntable.fm/privacy",
+			  "https://turntable.fm/copyright",
+			  "https://turntable.fm/terms",
+			  "https://turntable.fm/static/*"
+			],
+			"js": ["js/jquery.min.js", "js/tt8.js"],
+			"css": ["css/style.css"],
+			"run_at": "document_idle"
+		}
+	]
+}

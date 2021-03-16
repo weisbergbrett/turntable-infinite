@@ -1,0 +1,618 @@
+/* Copyright (c) 2021 Brett Weisberg */
+div.header-bar {
+    background: #0b0b10 !important;
+}
+div.favorite-star {
+    filter: brightness(4);
+}
+div.favorite-star:hover {
+    filter: none !important;
+}
+div.favorite-star.favorited {
+    filter: none !important;
+}
+
+/*left tabs (queue+room)*/
+/*queue*/
+div#playlist-header.floating-panel-header, div#playlist-display.panel-button, div#queue-header.floating-panel-header.normal, div#playlist-header.floating-panel-header, form.search.song-search {
+    background: #0b0b10 !important;
+}
+input#song-search-input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
+    border: solid 0px #0b0b10 !important;
+}
+div.mag-glass {
+    filter: brightness(5);
+}
+input#song-search-input {
+    color: white !important;
+}
+.btn-group, .filter.btn {
+    background: #1c1c27 !important;
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+}
+.btn-group, .filter.btn:hover {
+    background: #deb41f !important;
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
+}
+div#songs {
+    background: #0b0b10 !important;
+}
+.panel-button .text {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+.song .title {
+    color: white !important;
+}
+
+/*room*/
+.tabbed-panel a, .tabbed-panel a:visited {
+    color: #deb41f !important;
+}
+div.description.default-message {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+.tab-item:hover {
+    background: #deb41f !important;
+}
+.tab-item .tab-icon, .tab-item .tab-title {
+    filter: brightness(3);
+}
+.tabbed-panel a:hover, .tabbed-panel a:visited:hover {
+    color: #deb41f !important;
+}
+div.tab-item {
+    background: #0b0b10 !important;
+}
+div.room-tab .room-info-intro, .room-tab .room-name, .room-tab .num-listeners, .room-tab .description, .room-tab .edit-description, .room-tab .room-info-nav {
+    background: #0b0b10 !important;
+    color: white;
+    border-bottom: solid 1px #0b0b10 !important;
+}
+.flat-button {
+    background: #1c1c27 !important;
+    border: solid 1px #0b0b10 !important;
+}
+.flat-button:hover {
+    border: solid 1px #deb41f !important;
+    background: #1c1c27 !important;
+}
+.room-tab .room-info-link h3 {
+    color: white !important;
+}
+.room-tab .room-info-link:after {
+    filter: brightness(3);
+}
+.room-tab .room-info-link:after:hover {
+    filter: hue-rotate(128deg) !important;
+}
+li.flat-button.room-info-link.recently-played-link {
+    background-color: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+}
+/*recently played songs*/
+.sliding-nav .sliding-nav-pane-title, .song-list .ul, .striped-list, .song-list>ul {
+    background: #0b0b10 !important !important;
+}
+div.tabbed-panel button.back {
+    filter: invert;
+}
+div.sliding-nav .sliding-nav-pane-title {
+    color: white;
+    font-weight: normal;
+    text-shadow: none;
+    border-bottom: solid 0px #0b0b10 !important;
+}
+div.sliding-nav .sliding-nav-no-header .sliding-nav-pane-content {
+    background: #0b0b10 !important;
+}
+.striped-list>:nth-child(even):not(.separator), .song-list>ul>:nth-child(even):not(.separator) {
+    background: #15151d !important;
+    border: solid 0px #0b0b10 !important;
+}
+div.song-list>ul>:nth-child(odd):not(.separator) {
+    background-color: #1c1c27 !important;
+    border: solid 0px #0b0b10 !important;
+}
+.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .song-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .striped-list>:nth-child(even):not(.separator):not(.no-hover):hover {
+    background: #0b0b10 !important
+    border: solid 0px #0b0b10 !important;
+}
+.song-list>ul>:nth-child(even):not(.separator):not(.no-hover):hover {
+    background: #0b0b10 !important
+    border: solid 0px #0b0b10 !important;
+}
+div.song-log .title {
+    color: white !important;
+}
+div.scoregood, div.scorebad {
+    border-radius: 2px;
+}
+/*trending songs*/
+div.song-list {
+    background: #0b0b10 !important;
+}
+div.default-message p {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+/*people shape-rendering*/
+div.striped-list, .conversations-list>ul, .message-history, .guest-list {
+    background: #0b0b10 !important;
+}
+div.striped-list>:nth-child(even):not(.separator), .conversations-list>ul>:nth-child(even):not(.separator), .message-history>:nth-child(even):not(.separator), .guest-list>:nth-child(even):not(.separator) {
+    background: #15151d !important;
+    border: solid 0px #0b0b10 !important;
+}
+div.striped-list>:nth-child(odd):not(.separator), .conversations-list>ul>:nth-child(odd):not(.separator), .message-history>:nth-child(odd):not(.separator), .guest-list>:nth-child(odd):not(.separator) {
+    background: #1c1c27 !important;
+    border: solid 0px #0b0b10 !important;
+}
+.tabbed-panel .separator {
+    background: #0b0b10 !important;
+    border-top: solid 2px #deb41f !important;
+    border-bottom: solid 2px #deb41f !important;
+}
+.tabbed-panel .separator .text {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: none;
+}
+.guest-list .guest-name, .guest-list .guest-count {
+    color: white !important;
+}
+.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover, .conversations-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover, .message-history > :nth-child(even):not(.separator):not(.no-hover):hover {
+    background: #deb41f !important;
+}
+.guest-list > :nth-child(even):not(.separator):not(.no-hover):hover {
+    background: #deb41f !important;
+}
+.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .conversations-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .message-history>:nth-child(odd):not(.separator):not(.no-hover):hover, .guest-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
+    background: #deb41f !important;
+}
+
+/*chat*/
+div.chat .message {
+    background-color: #15151d !important;
+    border-bottom: #0b0b10 !important;
+}
+div.chat .message:nth-child(odd) {
+    background-color: #1c1c27 !important;
+}
+div.chat .messages {
+    color: white !important;
+    background: #0b0b10 !important;
+}
+div.chat .message.action {
+    color: #f1582b;
+}
+div.message .speaker:hover, .message .subject:hover {
+    color: #deb41f !important;
+}
+div.chat .message.mention {
+    background-color: #deb41f !important;
+    color: white !important;
+}
+div.floating-panel-bar {
+    border-top: solid 1px #0b0b10 !important;
+    border-bottom: solid 1px #0b0b10 !important;
+}
+div.chat-bar {
+    background: #0b0b10 !important;
+}
+div.chatsound-container, .chatsound-container:hover, .chatsound .mention {
+    background-image: linear-gradient(to bottom, #282835, #2f2f3c);
+    top: 4px !important;
+    left: 5px !important;
+    width: 32px !important;
+    height: 28px !important;
+}
+div.chat-bar .chatsound {
+    filter: brightness(2);
+    border-color: #0b0b10 !important;
+}
+textarea.message-input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
+}
+.floating-menu.up {
+    background-color: #0b0b10 !important;
+}
+#ding-menu {
+    background: #deb41f !important;
+}
+#ding-menu .option {
+    background: #0b0b10 !important;
+    color: white !important;
+}
+#ding-menu .option:not(.split-option):not(.disabled):hover, #ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
+    background-color: #deb41f !important;
+    background: #deb41f !important;
+    background-image: linear-gradient(to bottom, #deb41f !important, #deb41f !important);
+}
+textarea#chat-input.message-input, #chat-form {
+    color: white !important;
+}
+
+/*etc*/
+div.description {
+    color: white !important;
+}
+div.guestOptions.options {
+    background: #0b0b10 !important;
+    border-radius: 2px 2px 2px 2px #deb41f !important;
+}
+a.guestOption.option {
+    background: #0b0b10 !important;
+}
+.guestOptionsContainer .guestOption.option, .typeahead .suggestion {
+    color: white !important;
+    border-radius: 2px 2px 2px 2px #deb41f !important;
+}
+div.guestOptionsContainer .contextual-popup, div.guestOptions.options {
+    border-radius: 5px 5px 5px 5px !important;
+    border: solid 2px #deb41f !important;
+}
+.guestOptionsContainer .guestOption.option:hover, .typeahead .suggestion:hover {
+    background: #deb41f !important;
+}
+div.guestOptionsNibArrow {
+    background: #deb41f !important;
+}
+div.content {
+    background: #0b0b10 !important;
+}
+div.option.special {
+    background: #0b0b10 !important;
+}
+div.tooltip.avatar-tipsy.floating-menu.top.in {
+    background: #deb41f !important;
+}
+.floating-menu .option.special:not(.disabled) {
+    background: #0b0b10 !important;
+}
+.floating-menu .option.special:not(.disabled):hover {
+    background: #1c1c27 !important;
+}
+.floating-menu .option:not(.split-option):not(.disabled) {
+    background: #15151d !important;
+}
+.floating-menu .option:not(.split-option):not(.disabled):hover {
+    background: #deb41f !important;
+}
+.floating-menu .option {
+    color: white !important;
+}
+div.awesome-button, .awesome-button .selected {
+    filter: hue-rotate(128deg);
+}
+div.lame-button, .lame-button .selected {
+    filter: grayscale(1);
+}
+div.songboard {
+    filter: hue-rotate(128deg);
+}
+.settings-dropdown .dropdown {
+    background: #deb41f !important;
+}
+li.dropdown-volume-container, .settings-dropdown .dropdown .split-option.option .description, .settings-dropdown .dropdown .option:last-child {
+    background: #0b0b10 !important;
+}
+.volume-slider-fill, .volume-slider-knob:after {
+    background: #deb41f !important;
+}
+.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a {
+    background: #0b0b10 !important;
+}
+.settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:hover {
+    background: #deb41f !important;
+}
+.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
+    color: white !important;
+}
+.horizontal-toggle-option.selected, .settings-dropdown .dropdown .split-option.option .option.selected, .graphics-modal .toggle .option.selected, .floating-menu .split-option.option .option.selected {
+    background: #deb41f !important;
+}
+#ding-menu .split-option.option .option.selected, .settings-dropdown .dropdown .option:not(.split-option):not(.disabled):hover {
+    background: #deb41f !important;
+}
+.settings-dropdown .dropdown .split-option.option .description {
+    color: white !important;
+}
+.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
+    color: white !important;
+}
+.horizontal-toggle-option.selected, .settings-dropdown .dropdown .split-option.option .option.selected, .graphics-modal .toggle .option.selected, .floating-menu .split-option.option .option.selected, #ding-menu .split-option.option .option.selected {
+    background: #deb41f !important;
+}
+
+/*WTF DID I MISS????*/
+div.header-bar {
+    background: #0b0b10 !important;
+}
+div.favorite-star {
+    filter: brightness(4);
+}
+div.favorite-star:hover {
+    filter: none !important;
+}
+div.favorite-star .favorited {
+    filter: none !important;
+}
+
+div#playlist-header.floating-panel-header, div#playlist-display.panel-button, div#queue-header.floating-panel-header.normal, div#playlist-header.floating-panel-header, form.search.song-search {
+    background: #0b0b10 !important;
+}
+input#song-search-input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
+    border: solid 0px #0b0b10 !important;
+}
+div.mag-glass {
+    filter: brightness(5);
+}
+input#song-search-input {
+    color: white !important;
+}
+.btn-group, .filter.btn {
+    background: #1c1c27 !important;
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+}
+.btn-group, .filter.btn:hover {
+    background: #deb41f !important;
+    color: black;
+    font-weight: normal;
+    text-shadow: none;
+}
+div#songs {
+    background: #0b0b10 !important;
+}
+.panel-button .text {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+.song .title {
+    color: white !important;
+}
+
+.tabbed-panel a, .tabbed-panel a:visited {
+    color: #deb41f !important;
+}
+.tab-item:hover {
+    background: #deb41f !important;
+}
+.tab-item .tab-icon, .tab-item .tab-title {
+    filter: brightness(3);
+}
+.tabbed-panel a:hover, .tabbed-panel a:visited:hover {
+    color: #deb41f !important;
+}
+div.tab-item {
+    background: #0b0b10 !important;
+}
+div.room-tab .room-info-intro, .room-tab .room-name, .room-tab .num-listeners, .room-tab .description, .room-tab .edit-description, .room-tab .room-info-nav {
+    background: #0b0b10 !important;
+    color: white;
+    border-bottom: solid 1px #0b0b10 !important;
+}
+.flat-button {
+    background: #1c1c27 !important;
+    border: solid 1px #0b0b10 !important;
+}
+.flat-button:hover {
+    border: solid 1px #deb41f !important;
+    background: #1c1c27 !important;
+}
+.room-tab .room-info-link h3 {
+    color: white !important;
+}
+.room-tab .room-info-link:after {
+    filter: brightness(3);
+}
+.room-tab .room-info-link:after:hover {
+    filter: hue-rotate(128deg) !important;
+}
+li.flat-button.room-info-link.recently-played-link {
+    background-color: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+}
+
+.sliding-nav .sliding-nav-pane-title, .song-list .ul, .striped-list, .song-list>ul {
+    background: #0b0b10 !important !important;
+}
+div.tabbed-panel button.back {
+    filter: invert;
+}
+div.sliding-nav .sliding-nav-pane-title {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+    border-bottom: solid 0px #0b0b10 !important;
+}
+div.sliding-nav .sliding-nav-no-header .sliding-nav-pane-content {
+    background: #0b0b10 !important;
+}
+.striped-list>:nth-child(even):not(.separator), .song-list>ul>:nth-child(even):not(.separator) {
+    background: #15151d !important;
+    border: solid 0px #0b0b10 !important;
+}
+div.song-list>ul>:nth-child(odd):not(.separator) {
+    background-color: #1c1c27 !important;
+    border: solid 0px #0b0b10 !important;
+}
+.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
+    background: #0b0b10 !important;
+    border: solid 0px #0b0b10 !important;
+}
+.song-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .striped-list>:nth-child(even):not(.separator):not(.no-hover):hover, .song-list>ul>:nth-child(even):not(.separator):not(.no-hover):hover
+div.song-log .title {
+    color: white !important;
+}
+div.scoregood, div.scorebad {
+    border-radius: 2px;
+}
+div.song-list {
+    background: #0b0b10 !important;
+}
+div.default-message p {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+div.striped-list, .conversations-list>ul, .message-history, .guest-list {
+    background: #0b0b10 !important;
+}
+div.striped-list>:nth-child(even):not(.separator), .conversations-list>ul>:nth-child(even):not(.separator), .message-history>:nth-child(even):not(.separator), .guest-list>:nth-child(even):not(.separator) {
+    background: #15151d !important;
+    border: solid 0px #0b0b10 !important;
+}
+div.striped-list>:nth-child(odd):not(.separator), .conversations-list>ul>:nth-child(odd):not(.separator), .message-history>:nth-child(odd):not(.separator), .guest-list>:nth-child(odd):not(.separator) {
+    background: #1c1c27 !important;
+    border: solid 0px #0b0b10 !important;
+}
+.tabbed-panel .separator {
+    background: #0b0b10 !important;
+    border-top: solid 2px #deb41f !important;
+    border-bottom: solid 2px #deb41f !important;
+}
+.tabbed-panel .separator .text {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: none;
+}
+.guest-list .guest-name, .guest-list .guest-count {
+    color: white !important;
+}
+.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover {
+    background: #deb41f !important;
+}
+.conversations-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover, .message-history > :nth-child(even):not(.separator):not(.no-hover):hover, .guest-list > :nth-child(even):not(.separator):not(.no-hover):hover
+.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .conversations-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .message-history>:nth-child(odd):not(.separator):not(.no-hover):hover, .guest-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
+    background: #deb41f !important;
+}
+
+div.chat .message {
+    background-color: #15151d !important;
+    border-bottom: #0b0b10 !important;
+}
+div.chat .message:nth-child(odd) {
+    background-color: #1c1c27 !important;
+}
+div.chat .messages {
+    color: white !important;
+    background: #0b0b10 !important;
+}
+div.chat .message.action {
+    color: #f1582b;
+}
+div.message .speaker:hover, .message .subject:hover {
+    color: #deb41f !important;
+}
+div.chat .message.mention {
+    background-color: #deb41f !important;
+    color: white !important;
+}
+div.floating-panel-bar {
+    border-top: solid 1px #0b0b10 !important;
+    border-bottom: solid 1px #0b0b10 !important;
+}
+div.chat-bar {
+    background: #0b0b10 !important;
+}
+div.chatsound-container, .chatsound-container:hover, .chatsound .mention {
+    background-image: linear-gradient(to bottom, #282835, #2f2f3c);
+    top: 4px !important;
+    left: 5px !important;
+    width: 32px !important;
+    height: 28px !important;
+}
+div.chat-bar .chatsound {
+    filter: brightness(2);
+    border-color: #0b0b10 !important;
+}
+textarea.message-input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
+}
+.floating-menu.up {
+    background-color: #0b0b10 !important;
+}
+#ding-menu {
+    background: #deb41f !important;
+}
+#ding-menu .option {
+    background: #0b0b10 !important;
+    color: white !important;
+}
+#ding-menu .option:not(.split-option):not(.disabled):hover, #ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
+    background-color: #deb41f !important;
+    background: #deb41f !important;
+    background-image: linear-gradient(to bottom, #deb41f !important, #deb41f !important);
+}
+textarea#chat-input.message-input, #chat-form {
+    color: white !important;
+}
+
+div.description {
+    color: white !important;
+}
+div.guestOptions.options {
+    background: #0b0b10 !important;
+    border-radius: 2px 2px 2px 2px #deb41f !important;
+}
+a.guestOption.option {
+    background: #0b0b10 !important;
+}
+.guestOptionsContainer .guestOption.option, .typeahead .suggestion {
+    color: white !important;
+    border-radius: 2px 2px 2px 2px #deb41f !important;
+}
+div.guestOptionsContainer .contextual-popup, div.guestOptions.options {
+    border-radius: 5px 5px 5px 5px !important;
+    border: solid 2px #deb41f !important;
+}
+.guestOptionsContainer .guestOption.option:hover, .typeahead .suggestion:hover {
+    background: #deb41f !important;
+}
+
+div.guestOptionsNibArrow {
+    background: #deb41f !important;
+    border-radius: 2px 2px 2px 2px white;
+    border-top: solid 2px #deb41f !important;
+}
+div#privateChatIcon.pmGreyTop.hover, .pmGreyTop, .pmContainer {
+    background: #0b0b10 !important;
+    border-radius: 2px 2px 2px 2px white;
+    border-top: solid 2px #deb41f !important;
+}
+.conversation-item .conversation-info .conversation-username {
+    color: white !important;
+}
+.message-view {
+    color: white !important;
+}
+textarea.message-input {
+    color: white !important;
+}
+div.chatIcon {
+    filter: invert(1);
+}
