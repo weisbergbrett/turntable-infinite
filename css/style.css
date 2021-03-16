@@ -1,209 +1,341 @@
 /* Copyright (c) 2021 Brett Weisberg */
-div.header-bar {
+
+/* COLORS
+
+main dark: #0b0b10
+chat main: #15151d
+chat secondary: #1c1c27
+tt-color: #deb41f
+linear-gradient: #282835, #2f2f3c
+chat warning: #f1582b
+
+*/
+
+/* ALL */
+
+div.text {
+    color: white;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+/* HEADER*/
+
+/* TOP BAR */
+.header-bar {
     background: #0b0b10 !important;
 }
-div.favorite-star {
+/* FAVORITE STAR */
+.favorite-star {
     filter: brightness(4);
 }
-div.favorite-star:hover {
+.favorite-star:hover {
     filter: none !important;
 }
-div.favorite-star.favorited {
+.favorite-star.favorited {
     filter: none !important;
 }
-
-/*left tabs (queue+room)*/
-/*queue*/
-div#playlist-header.floating-panel-header, div#playlist-display.panel-button, div#queue-header.floating-panel-header.normal, div#playlist-header.floating-panel-header, form.search.song-search {
+/* ROOM SEARCH */
+div.content {
     background: #0b0b10 !important;
 }
-input#song-search-input {
-    background: linear-gradient(to bottom, #282835, #2f2f3c);
-    border-radius: 5px 5px 5px 5px !important;
-    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
-    border: solid 0px #0b0b10 !important;
+input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 0px 0px 0px 0px;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+    color: white !important;
+}
+.overlay input, .overlay textarea, .overlay select {
+    padding: 5px 35px !important;
 }
 div.mag-glass {
-    filter: brightness(5);
+    filter: brightness(4);
+    size: 50%;
+    margin-top: 3px !important;
 }
-input#song-search-input {
-    color: white !important;
-}
-.btn-group, .filter.btn {
-    background: #1c1c27 !important;
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
-    border-radius: 0px 0px 0px 0px !important;
+div.roomListItem, div.room-list {
+    background: #15151d !important;
+    border-radius: 0px 0px 0px 0px;
     border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
 }
-.btn-group, .filter.btn:hover {
-    background: #deb41f !important;
-    color: black;
-    font-weight: normal;
-    text-shadow: none;
+div.roomListItem:hover {
+    background: #282835 !important;
 }
-div#songs {
+span.roomName {
+    color: white !important;
+}
+span.songName {
+    color: #deb41f !important;
+}
+
+/* SETTINGS */
+ul.dropdown, li.dropdown-volume-container {
     background: #0b0b10 !important;
 }
-.panel-button .text {
+.settings-dropdown .dropdown .option {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 2px 2px 2px 2px;
+    border: solid 1px #0b0b10;
+    -webkit-box-shadow: none !important;
     color: white !important;
+}
+.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
+    color: white !important;
+}
+#layout-option, .settings-dropdown .dropdown .split-option.option .description {
+    background: #15151d !important;
+}
+div.option.single-panel, div.option.dual-panel {
+    background: #0b0b10 !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border: solid 0px #0b0b10 !important;
+}
+div.option.single-panel.selected {
+    background: #deb41f !important;
+}
+div.option.dual-panel.selected {
+    background: #deb41f !important;
+}
+div.volume-slider-fill, .volume-slider-knob:after {
+    background: #deb41f !important;
+}
+li.logout {
+    filter: brightness(4);
+}
+
+
+/* TABS */
+
+.tab-item {
+    background: #0b0b10 !important;
+}
+.tab-item.selected {
+    background: #deb41f !important;
+}
+.tab-title {
     font-weight: normal;
     text-shadow: none;
 }
-.song .title {
+
+/* QUEUE */
+
+/* PLAYLIST & SONG SEARCH HEADER */
+div#playlist-header.floating-panel-header {
+    background: #0b0b10 !important;
+}
+div#playlist-display.panel-button, .floating-panel-header, .floating-panel-bar {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 0px 0px 0px 0px;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+div#playlist-display.panel-button {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+input#song-search-input {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+    color: white !important;
+}
+div.mag-glass {
+    filter: contrast(4);
+}
+div.playlist-queue-inset {
+    filter: brightness(4);
+}
+div#normal-mode, div#queue-header.floating-panel-header.normal, div#songs {
+    background: #0b0b10 !important;
+}
+div#queue-view.main-pane {
+    background: #0b0b10 !important;
+}
+/* PLAYLISTS */
+ul#playlist-dropdown.floating-menu {
+    background: #0b0b10 !important;
+}
+#playlist .floating-menu .option {
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+li.option.playlist, li.option.new-playlist {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+}
+li#trigger-batch.option {
+    background: #1c1c27 !important;
+}
+#playlist-dropdown .playlist-label, span.text {
+    color: white !important;
+}
+li.option.playlist.active, li.option.playlist:hover, .playlist-dropdown .new-playlist:hover, li.option.new-playlist:hover, li#trigger-batch.option:hover {
+    background: #deb41f !important;
+}
+/* PLAYLIST SONGS */
+.striped-list, .song-list, .striped-list>*, .song-list>ul>* {
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+.striped-list>:nth-child(even):not(.separator), .song-list>ul>:nth-child(even):not(.separator) {
+    background: #1c1c27 !important;
+}
+.striped-list>:nth-child(even):not(.separator):hover, .song-list>ul>:nth-child(even):not(.separator):hover {
+    background: #282835 !important;
+}
+.striped-list>:nth-child(odd):not(.separator), .song-list>ul>:nth-child(odd):not(.separator) {
+    background: #15151d !important;
+}
+.striped-list>:nth-child(odd):not(.separator):hover, .song-list>ul>:nth-child(odd):not(.separator):hover {
+    background: #282835 !important;
+}
+div.title {
     color: white !important;
 }
 
-/*room*/
-.tabbed-panel a, .tabbed-panel a:visited {
+/* ROOM */
+
+/* ROOM INFO */
+div.room-info-intro, div.room-name, span.listener-count.num-listeners, div.description, ul.room-info-nav {
+    background: #0b0b10 !important;
+    color: white !important;
+}
+div.room-tab-main-view.sliding-nav-pane-content {
+    background: #0b0b10 !important;
+}
+a.creator, a {
     color: #deb41f !important;
 }
-div.description.default-message {
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
+/* BUTTONS */
+li.flat-button.room-info-link.recently-played-link, li.flat-button.room-info-link.trending-link, li.flat-button.room-info-link.guest-list-link {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border: solid 2px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
 }
-.tab-item:hover {
-    background: #deb41f !important;
+li.flat-button.room-info-link.recently-played-link:hover, li.flat-button.room-info-link.trending-link:hover, li.flat-button.room-info-link.guest-list-link:hover {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border: solid 2px #deb41f !important;
+    -webkit-box-shadow: none !important;
 }
-.tab-item .tab-icon, .tab-item .tab-title {
-    filter: brightness(3);
-}
-.tabbed-panel a:hover, .tabbed-panel a:visited:hover {
-    color: #deb41f !important;
-}
-div.tab-item {
-    background: #0b0b10 !important;
-}
-div.room-tab .room-info-intro, .room-tab .room-name, .room-tab .num-listeners, .room-tab .description, .room-tab .edit-description, .room-tab .room-info-nav {
-    background: #0b0b10 !important;
-    color: white;
-    border-bottom: solid 1px #0b0b10 !important;
-}
-.flat-button {
-    background: #1c1c27 !important;
-    border: solid 1px #0b0b10 !important;
-}
-.flat-button:hover {
-    border: solid 1px #deb41f !important;
-    background: #1c1c27 !important;
-}
-.room-tab .room-info-link h3 {
+h3 {
     color: white !important;
 }
-.room-tab .room-info-link:after {
-    filter: brightness(3);
+li.flat-button.room-info-link.recently-played-link:after, li.flat-button.room-info-link.trending-link:after, li.flat-button.room-info-link.guest-list-link:after {
+    filter: brightness(4);
 }
-.room-tab .room-info-link:after:hover {
-    filter: hue-rotate(128deg) !important;
-}
-li.flat-button.room-info-link.recently-played-link {
-    background-color: linear-gradient(to bottom, #282835, #2f2f3c) !important;
-}
-/*recently played songs*/
-.sliding-nav .sliding-nav-pane-title, .song-list .ul, .striped-list, .song-list>ul {
-    background: #0b0b10 !important !important;
-}
-div.tabbed-panel button.back {
-    filter: invert;
-}
-div.sliding-nav .sliding-nav-pane-title {
-    color: white;
-    font-weight: normal;
-    text-shadow: none;
-    border-bottom: solid 0px #0b0b10 !important;
-}
-div.sliding-nav .sliding-nav-no-header .sliding-nav-pane-content {
+/* RECENTLY PLAYED SONGS */
+div.sliding-nav-pane-title {
     background: #0b0b10 !important;
 }
-.striped-list>:nth-child(even):not(.separator), .song-list>ul>:nth-child(even):not(.separator) {
-    background: #15151d !important;
-    border: solid 0px #0b0b10 !important;
-}
-div.song-list>ul>:nth-child(odd):not(.separator) {
-    background-color: #1c1c27 !important;
-    border: solid 0px #0b0b10 !important;
-}
-.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .song-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .striped-list>:nth-child(even):not(.separator):not(.no-hover):hover {
-    background: #0b0b10 !important
-    border: solid 0px #0b0b10 !important;
-}
-.song-list>ul>:nth-child(even):not(.separator):not(.no-hover):hover {
-    background: #0b0b10 !important
-    border: solid 0px #0b0b10 !important;
-}
-div.song-log .title {
+div.sliding-nav-pane-title {
     color: white !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
 }
-div.scoregood, div.scorebad {
-    border-radius: 2px;
+div.score.scoregood {
+    border-radius: 5px !important;
 }
-/*trending songs*/
-div.song-list {
+/* TRENDING SONGS */
+div.song-list.trending-songs.sliding-nav-pane-content {
     background: #0b0b10 !important;
 }
-div.default-message p {
+.default-message p {
     color: white !important;
-    font-weight: normal;
-    text-shadow: none;
+    font-weight: normal !important;
+    text-shadow: none !important;
 }
-/*people shape-rendering*/
-div.striped-list, .conversations-list>ul, .message-history, .guest-list {
+/* PEOPLE HERE */
+.tabbed-panel .separator, ul.guest-list.sliding-nav-pane-content {
     background: #0b0b10 !important;
-}
-div.striped-list>:nth-child(even):not(.separator), .conversations-list>ul>:nth-child(even):not(.separator), .message-history>:nth-child(even):not(.separator), .guest-list>:nth-child(even):not(.separator) {
-    background: #15151d !important;
-    border: solid 0px #0b0b10 !important;
-}
-div.striped-list>:nth-child(odd):not(.separator), .conversations-list>ul>:nth-child(odd):not(.separator), .message-history>:nth-child(odd):not(.separator), .guest-list>:nth-child(odd):not(.separator) {
-    background: #1c1c27 !important;
-    border: solid 0px #0b0b10 !important;
-}
-.tabbed-panel .separator {
-    background: #0b0b10 !important;
-    border-top: solid 2px #deb41f !important;
-    border-bottom: solid 2px #deb41f !important;
 }
 .tabbed-panel .separator .text {
     color: white !important;
-    font-weight: bold;
-    text-shadow: none;
+    font-weight: normal !important;
+    text-shadow: none !important;
 }
-.guest-list .guest-name, .guest-list .guest-count {
+div.guest {
+    background-color: #15151d !important;
+}
+div.guest:nth-child(odd) {
+    background-color: #1c1c27 !important;
+}
+div.guest-name, div.guest-count {
     color: white !important;
 }
-.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover, .conversations-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover, .message-history > :nth-child(even):not(.separator):not(.no-hover):hover {
-    background: #deb41f !important;
+div.guestOptions.options, a.guestOption.option, .guest-list .guestOptionsContainer .guestOptions {
+    background: #15151d !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 1px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
 }
-.guest-list > :nth-child(even):not(.separator):not(.no-hover):hover {
-    background: #deb41f !important;
-}
-.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .conversations-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .message-history>:nth-child(odd):not(.separator):not(.no-hover):hover, .guest-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
-    background: #deb41f !important;
+div.guestOptions.options:hover, a.guestOption.option:hover {
+    color: white !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 1px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
 }
 
-/*chat*/
-div.chat .message {
+/* CHAT */
+.chat .message {
     background-color: #15151d !important;
     border-bottom: #0b0b10 !important;
 }
-div.chat .message:nth-child(odd) {
+.chat .message:nth-child(odd) {
     background-color: #1c1c27 !important;
 }
-div.chat .messages {
+.chat .messages {
     color: white !important;
     background: #0b0b10 !important;
 }
-div.chat .message.action {
-    color: #f1582b;
+.chat .message.action {
+    color: #f1582b !important;
 }
-div.message .speaker:hover, .message .subject:hover {
+.message .speaker:hover, .message .subject:hover {
     color: #deb41f !important;
 }
-div.chat .message.mention {
-    background-color: #deb41f !important;
+.chat .message.mention {
+    background-color: #282835 !important;
     color: white !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border-top: solid 3px #deb41f !important;
+    border-left: solid 3px #deb41f !important;
+    border-right: solid 3px #deb41f !important;
+    border-bottom: solid 3px #deb41f !important;
 }
 div.floating-panel-bar {
     border-top: solid 1px #0b0b10 !important;
@@ -231,12 +363,18 @@ textarea.message-input {
 .floating-menu.up {
     background-color: #0b0b10 !important;
 }
+/* DING MENU */
 #ding-menu {
-    background: #deb41f !important;
+    background: #0b0b10 !important;
 }
 #ding-menu .option {
-    background: #0b0b10 !important;
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
     color: white !important;
+    border-radius: 0px 0px 0px 0px !important;
+    -webkit-box-shadow: none !important;
+}
+#ding-menu .split-option.option .description {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
 }
 #ding-menu .option:not(.split-option):not(.disabled):hover, #ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
     background-color: #deb41f !important;
@@ -246,373 +384,101 @@ textarea.message-input {
 textarea#chat-input.message-input, #chat-form {
     color: white !important;
 }
-
-/*etc*/
-div.description {
-    color: white !important;
-}
-div.guestOptions.options {
-    background: #0b0b10 !important;
-    border-radius: 2px 2px 2px 2px #deb41f !important;
-}
-a.guestOption.option {
+div.option.on, div.option.off {
     background: #0b0b10 !important;
 }
-.guestOptionsContainer .guestOption.option, .typeahead .suggestion {
-    color: white !important;
-    border-radius: 2px 2px 2px 2px #deb41f !important;
+#ding-menu .option {
+    background: #15151d !important;
 }
-div.guestOptionsContainer .contextual-popup, div.guestOptions.options {
-    border-radius: 5px 5px 5px 5px !important;
-    border: solid 2px #deb41f !important;
-}
-.guestOptionsContainer .guestOption.option:hover, .typeahead .suggestion:hover {
-    background: #deb41f !important;
-}
-div.guestOptionsNibArrow {
-    background: #deb41f !important;
-}
-div.content {
-    background: #0b0b10 !important;
-}
-div.option.special {
-    background: #0b0b10 !important;
-}
-div.tooltip.avatar-tipsy.floating-menu.top.in {
-    background: #deb41f !important;
-}
-.floating-menu .option.special:not(.disabled) {
-    background: #0b0b10 !important;
-}
-.floating-menu .option.special:not(.disabled):hover {
+#ding-menu .split-option.option, #ding-menu .split-option.option .description {
     background: #1c1c27 !important;
 }
-.floating-menu .option:not(.split-option):not(.disabled) {
+
+/* PMS */
+.pmGreyTop, div#privateChatIcon.pmGreyTop.hover, div.pmHeader.pmGreyTop {
     background: #15151d !important;
+    border-top: solid 2px #deb41f !important;
+    border-left: solid 1px #deb41f !important;
+    border-right: solid 1px #deb41f !important;
+}
+form.message-input-view {
+    background: #15151d !important;
+}
+li.conversation-item {
+    background: #1c1c27 !important;
+}
+div.nib, div.pmWindowIcon.pmClose {
+    filter: invert(1);
+}
+div.message-username {
+    color: #deb41f !important;
+}
+li.message-view.no-hover {
+    background: #1c1c27 !important;
+}
+textarea.message-input, li.message-fragment {
+    color: white !important;
+}
+div#buddyListTitle {
+    color: black !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+div.conversation-username {
+    color: #deb41f !important;
+}
+a.conversation-user-room-link {
+    color: white !important;
+}
+.options-menu .nib {
+    background-color: #d7d7ca !important;
+}
+.options-menu .options {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+li.option.checked, li.option.ignored-users, {
+    color: white !important;
+}
+.options-menu .option:hover {
+    background: #deb41f !important;
+}
+.options-menu .option.checked:after {
+    filter: brightness(4);
+}
+.striped-list>*, .conversations-list>ul>*, .message-history>*, .guest-list>* {
+    border-bottom: solid 1px #0b0b10 !important;
+}
+
+/* PROFILES */
+div.tooltip.avatar-tipsy.floating-menu.top.in {
+    background: #0b0b10 !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+div.option.special {
+    background: #15151d !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 1px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
+    border-bottom: solid 0px #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
+li.option {
+    color: white !important;
 }
 .floating-menu .option:not(.split-option):not(.disabled):hover {
     background: #deb41f !important;
 }
-.floating-menu .option {
-    color: white !important;
-}
-div.awesome-button, .awesome-button .selected {
-    filter: hue-rotate(128deg);
-}
-div.lame-button, .lame-button .selected {
-    filter: grayscale(1);
-}
-div.songboard {
-    filter: hue-rotate(128deg);
-}
-.settings-dropdown .dropdown {
-    background: #deb41f !important;
-}
-li.dropdown-volume-container, .settings-dropdown .dropdown .split-option.option .description, .settings-dropdown .dropdown .option:last-child {
-    background: #0b0b10 !important;
-}
-.volume-slider-fill, .volume-slider-knob:after {
-    background: #deb41f !important;
-}
-.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a {
-    background: #0b0b10 !important;
-}
-.settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:hover {
-    background: #deb41f !important;
-}
-.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
-    color: white !important;
-}
-.horizontal-toggle-option.selected, .settings-dropdown .dropdown .split-option.option .option.selected, .graphics-modal .toggle .option.selected, .floating-menu .split-option.option .option.selected {
-    background: #deb41f !important;
-}
-#ding-menu .split-option.option .option.selected, .settings-dropdown .dropdown .option:not(.split-option):not(.disabled):hover {
-    background: #deb41f !important;
-}
-.settings-dropdown .dropdown .split-option.option .description {
-    color: white !important;
-}
-.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
-    color: white !important;
-}
-.horizontal-toggle-option.selected, .settings-dropdown .dropdown .split-option.option .option.selected, .graphics-modal .toggle .option.selected, .floating-menu .split-option.option .option.selected, #ding-menu .split-option.option .option.selected {
-    background: #deb41f !important;
-}
 
-/*WTF DID I MISS????*/
-div.header-bar {
-    background: #0b0b10 !important;
-}
-div.favorite-star {
-    filter: brightness(4);
-}
-div.favorite-star:hover {
-    filter: none !important;
-}
-div.favorite-star .favorited {
-    filter: none !important;
-}
-
-div#playlist-header.floating-panel-header, div#playlist-display.panel-button, div#queue-header.floating-panel-header.normal, div#playlist-header.floating-panel-header, form.search.song-search {
-    background: #0b0b10 !important;
-}
-input#song-search-input {
-    background: linear-gradient(to bottom, #282835, #2f2f3c);
-    border-radius: 5px 5px 5px 5px !important;
-    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
-    border: solid 0px #0b0b10 !important;
-}
-div.mag-glass {
-    filter: brightness(5);
-}
-input#song-search-input {
-    color: white !important;
-}
-.btn-group, .filter.btn {
-    background: #1c1c27 !important;
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
-    border-radius: 0px 0px 0px 0px !important;
-    border-top: solid 1px #0b0b10 !important;
-}
-.btn-group, .filter.btn:hover {
-    background: #deb41f !important;
-    color: black;
-    font-weight: normal;
-    text-shadow: none;
-}
-div#songs {
-    background: #0b0b10 !important;
-}
-.panel-button .text {
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
-}
-.song .title {
-    color: white !important;
-}
-
-.tabbed-panel a, .tabbed-panel a:visited {
-    color: #deb41f !important;
-}
-.tab-item:hover {
-    background: #deb41f !important;
-}
-.tab-item .tab-icon, .tab-item .tab-title {
-    filter: brightness(3);
-}
-.tabbed-panel a:hover, .tabbed-panel a:visited:hover {
-    color: #deb41f !important;
-}
-div.tab-item {
-    background: #0b0b10 !important;
-}
-div.room-tab .room-info-intro, .room-tab .room-name, .room-tab .num-listeners, .room-tab .description, .room-tab .edit-description, .room-tab .room-info-nav {
-    background: #0b0b10 !important;
-    color: white;
-    border-bottom: solid 1px #0b0b10 !important;
-}
-.flat-button {
-    background: #1c1c27 !important;
-    border: solid 1px #0b0b10 !important;
-}
-.flat-button:hover {
-    border: solid 1px #deb41f !important;
-    background: #1c1c27 !important;
-}
-.room-tab .room-info-link h3 {
-    color: white !important;
-}
-.room-tab .room-info-link:after {
-    filter: brightness(3);
-}
-.room-tab .room-info-link:after:hover {
-    filter: hue-rotate(128deg) !important;
-}
-li.flat-button.room-info-link.recently-played-link {
-    background-color: linear-gradient(to bottom, #282835, #2f2f3c) !important;
-}
-
-.sliding-nav .sliding-nav-pane-title, .song-list .ul, .striped-list, .song-list>ul {
-    background: #0b0b10 !important !important;
-}
-div.tabbed-panel button.back {
-    filter: invert;
-}
-div.sliding-nav .sliding-nav-pane-title {
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
-    border-bottom: solid 0px #0b0b10 !important;
-}
-div.sliding-nav .sliding-nav-no-header .sliding-nav-pane-content {
-    background: #0b0b10 !important;
-}
-.striped-list>:nth-child(even):not(.separator), .song-list>ul>:nth-child(even):not(.separator) {
-    background: #15151d !important;
-    border: solid 0px #0b0b10 !important;
-}
-div.song-list>ul>:nth-child(odd):not(.separator) {
-    background-color: #1c1c27 !important;
-    border: solid 0px #0b0b10 !important;
-}
-.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
-    background: #0b0b10 !important;
-    border: solid 0px #0b0b10 !important;
-}
-.song-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .striped-list>:nth-child(even):not(.separator):not(.no-hover):hover, .song-list>ul>:nth-child(even):not(.separator):not(.no-hover):hover
-div.song-log .title {
-    color: white !important;
-}
-div.scoregood, div.scorebad {
-    border-radius: 2px;
-}
-div.song-list {
-    background: #0b0b10 !important;
-}
-div.default-message p {
-    color: white !important;
-    font-weight: normal;
-    text-shadow: none;
-}
-div.striped-list, .conversations-list>ul, .message-history, .guest-list {
-    background: #0b0b10 !important;
-}
-div.striped-list>:nth-child(even):not(.separator), .conversations-list>ul>:nth-child(even):not(.separator), .message-history>:nth-child(even):not(.separator), .guest-list>:nth-child(even):not(.separator) {
-    background: #15151d !important;
-    border: solid 0px #0b0b10 !important;
-}
-div.striped-list>:nth-child(odd):not(.separator), .conversations-list>ul>:nth-child(odd):not(.separator), .message-history>:nth-child(odd):not(.separator), .guest-list>:nth-child(odd):not(.separator) {
-    background: #1c1c27 !important;
-    border: solid 0px #0b0b10 !important;
-}
-.tabbed-panel .separator {
-    background: #0b0b10 !important;
-    border-top: solid 2px #deb41f !important;
-    border-bottom: solid 2px #deb41f !important;
-}
-.tabbed-panel .separator .text {
-    color: white !important;
-    font-weight: bold;
-    text-shadow: none;
-}
-.guest-list .guest-name, .guest-list .guest-count {
-    color: white !important;
-}
-.striped-list > :nth-child(even):not(.separator):not(.no-hover):hover {
-    background: #deb41f !important;
-}
-.conversations-list > ul > :nth-child(even):not(.separator):not(.no-hover):hover, .message-history > :nth-child(even):not(.separator):not(.no-hover):hover, .guest-list > :nth-child(even):not(.separator):not(.no-hover):hover
-.striped-list>:nth-child(odd):not(.separator):not(.no-hover):hover, .conversations-list>ul>:nth-child(odd):not(.separator):not(.no-hover):hover, .message-history>:nth-child(odd):not(.separator):not(.no-hover):hover, .guest-list>:nth-child(odd):not(.separator):not(.no-hover):hover {
-    background: #deb41f !important;
-}
-
-div.chat .message {
-    background-color: #15151d !important;
-    border-bottom: #0b0b10 !important;
-}
-div.chat .message:nth-child(odd) {
-    background-color: #1c1c27 !important;
-}
-div.chat .messages {
-    color: white !important;
-    background: #0b0b10 !important;
-}
-div.chat .message.action {
-    color: #f1582b;
-}
-div.message .speaker:hover, .message .subject:hover {
-    color: #deb41f !important;
-}
-div.chat .message.mention {
-    background-color: #deb41f !important;
-    color: white !important;
-}
-div.floating-panel-bar {
-    border-top: solid 1px #0b0b10 !important;
-    border-bottom: solid 1px #0b0b10 !important;
-}
-div.chat-bar {
-    background: #0b0b10 !important;
-}
-div.chatsound-container, .chatsound-container:hover, .chatsound .mention {
-    background-image: linear-gradient(to bottom, #282835, #2f2f3c);
-    top: 4px !important;
-    left: 5px !important;
-    width: 32px !important;
-    height: 28px !important;
-}
-div.chat-bar .chatsound {
-    filter: brightness(2);
-    border-color: #0b0b10 !important;
-}
-textarea.message-input {
-    background: linear-gradient(to bottom, #282835, #2f2f3c);
-    border-radius: 5px 5px 5px 5px !important;
-    box-shadow: inset 0 0 0 0px #fff, 0 0px 0 0 #fff;
-}
-.floating-menu.up {
-    background-color: #0b0b10 !important;
-}
-#ding-menu {
-    background: #deb41f !important;
-}
-#ding-menu .option {
-    background: #0b0b10 !important;
-    color: white !important;
-}
-#ding-menu .option:not(.split-option):not(.disabled):hover, #ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
-    background-color: #deb41f !important;
-    background: #deb41f !important;
-    background-image: linear-gradient(to bottom, #deb41f !important, #deb41f !important);
-}
-textarea#chat-input.message-input, #chat-form {
-    color: white !important;
-}
-
-div.description {
-    color: white !important;
-}
-div.guestOptions.options {
-    background: #0b0b10 !important;
-    border-radius: 2px 2px 2px 2px #deb41f !important;
-}
-a.guestOption.option {
-    background: #0b0b10 !important;
-}
-.guestOptionsContainer .guestOption.option, .typeahead .suggestion {
-    color: white !important;
-    border-radius: 2px 2px 2px 2px #deb41f !important;
-}
-div.guestOptionsContainer .contextual-popup, div.guestOptions.options {
-    border-radius: 5px 5px 5px 5px !important;
-    border: solid 2px #deb41f !important;
-}
-.guestOptionsContainer .guestOption.option:hover, .typeahead .suggestion:hover {
-    background: #deb41f !important;
-}
-
-div.guestOptionsNibArrow {
-    background: #deb41f !important;
-    border-radius: 2px 2px 2px 2px white;
-    border-top: solid 2px #deb41f !important;
-}
-div#privateChatIcon.pmGreyTop.hover, .pmGreyTop, .pmContainer {
-    background: #0b0b10 !important;
-    border-radius: 2px 2px 2px 2px white;
-    border-top: solid 2px #deb41f !important;
-}
-.conversation-item .conversation-info .conversation-username {
-    color: white !important;
-}
-.message-view {
-    color: white !important;
-}
-textarea.message-input {
-    color: white !important;
-}
-div.chatIcon {
-    filter: invert(1);
-}
+/* ETC */
