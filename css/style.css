@@ -322,7 +322,7 @@ div.guestOptions.options:hover, a.guestOption.option:hover {
     color: white !important;
     background: #0b0b10 !important;
 }
-.chat .message.action {
+.chat .message.action, .chat .message.action .text {
     color: #f1582b !important;
 }
 .message .speaker:hover, .message .subject:hover {
