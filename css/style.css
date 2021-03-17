@@ -333,7 +333,8 @@ div.guest-name, div.guest-count {
     color: white !important;
 }
 div.guestOptions.options, a.guestOption.option, .guest-list .guestOptionsContainer .guestOptions {
-    background: #15151d !important;
+    background: #1c1c27 !important;
+    color: white !important;
     border-radius: 0px 0px 0px 0px !important;
     border-top: solid 1px #0b0b10 !important;
     border-left: solid 1px #0b0b10 !important;
@@ -342,6 +343,7 @@ div.guestOptions.options, a.guestOption.option, .guest-list .guestOptionsContain
     -webkit-box-shadow: none !important;
 }
 div.guestOptions.options:hover, a.guestOption.option:hover {
+    background: #15151d !important;
     color: white !important;
     border-radius: 0px 0px 0px 0px !important;
     border-top: solid 1px #0b0b10 !important;
