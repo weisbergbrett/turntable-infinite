@@ -87,8 +87,11 @@ ul.dropdown, li.dropdown-volume-container {
     -webkit-box-shadow: none !important;
     color: white !important;
 }
-.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:hover, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
+.settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
     color: white !important;
+}
+.settings-dropdown .dropdown .option.link a:hover {
+    background: #deb41f !important;
 }
 #layout-option, .settings-dropdown .dropdown .split-option.option .description {
     background: #15151d !important;
