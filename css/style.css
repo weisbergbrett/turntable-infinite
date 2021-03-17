@@ -254,6 +254,9 @@ li.option.switch-menu, li.option.playlist-remove, li.option.move-bottom, li.opti
 .song .progress-bar {
     background: #1c1c27 !important;
 }
+.song .progress {
+    background-color: #31314c !important;
+}
 
 /* ROOM */
 
@@ -557,6 +560,14 @@ a.ignore-action {
 }
 a.ignore-action:hover {
     background: #15151d !important;
+}
+.overlay textarea.textarea, .overlay .settings .website {
+    width: 370px !important;
+}
+h2.points-msg, h4.subtitle {
+    color: white;
+    font-weight: normal;
+    text-shadow: none;
 }
 
 /* ETC */
