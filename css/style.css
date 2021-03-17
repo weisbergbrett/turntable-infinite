@@ -27,7 +27,6 @@ chat warning: #f1582b
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #282835;
-  border-radius: 5px;
   border: solid 2px #2f2f3c;
 }
 
