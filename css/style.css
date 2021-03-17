@@ -369,6 +369,12 @@ textarea.message-input {
 .floating-menu.up {
     background-color: #0b0b10 !important;
 }
+div.typeahead {
+    background: #0b0b10 !important;
+}
+div.suggestion.selected {
+    background: #deb41f !important;
+}
 /* DING MENU */
 #ding-menu {
     background: #0b0b10 !important;
