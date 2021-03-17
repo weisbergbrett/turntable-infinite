@@ -230,6 +230,9 @@ div.room-info-intro, div.room-name, span.listener-count.num-listeners, div.descr
 div.room-tab-main-view.sliding-nav-pane-content {
     background: #0b0b10 !important;
 }
+div.room-tab .room-info-intro, .room-tab .room-info-wrap {
+    border-bottom: solid 1px #0b0b10 !important;
+}
 a.creator, a {
     color: #deb41f !important;
 }
