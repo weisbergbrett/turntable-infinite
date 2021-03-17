@@ -13,6 +13,30 @@ chat warning: #f1582b
 
 /* ALL */
 
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0b0b10;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #282835;
+  border-radius: 5px;
+  border: solid 2px #2f2f3c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c27;
+}
+
+/* TEXT */
 div.text {
     color: white;
     font-weight: normal;
@@ -90,8 +114,8 @@ ul.dropdown, li.dropdown-volume-container {
 .settings-dropdown .dropdown .option.link a, .settings-dropdown .dropdown .option.link a:active, .settings-dropdown .dropdown .option.link a:visited {
     color: white !important;
 }
-.settings-dropdown .dropdown .option.link a:hover {
-    background: #deb41f !important;
+div.settings-dropdown .dropdown .option.link a:hover {
+    background: #15151d !important;
 }
 #layout-option, .settings-dropdown .dropdown .split-option.option .description {
     background: #15151d !important;
@@ -196,7 +220,7 @@ li#trigger-batch.option {
     color: white !important;
 }
 li.option.playlist.active, li.option.playlist:hover, .playlist-dropdown .new-playlist:hover, li.option.new-playlist:hover, li#trigger-batch.option:hover {
-    background: #deb41f !important;
+    background: #15151d !important;
 }
 /* PLAYLIST SONGS */
 .striped-list, .song-list, .striped-list>*, .song-list>ul>* {
@@ -223,6 +247,12 @@ div.title {
     color: white !important;
 }
 li.option.switch-menu, li.option.playlist-remove, li.option.move-bottom, li.option.site-add {
+    background: #1c1c27 !important;
+}
+.song-list ul.songs {
+    background: #0b0b10 !important;
+}
+.song .progress-bar {
     background: #1c1c27 !important;
 }
 
@@ -338,13 +368,13 @@ div.guestOptions.options:hover, a.guestOption.option:hover {
     color: #deb41f !important;
 }
 .chat .message.mention {
-    background-color: #282835 !important;
+    background-color: #000000 !important;
     color: white !important;
-    border-radius: 0px 0px 0px 0px !important;
-    border-top: solid 3px #deb41f !important;
-    border-left: solid 3px #deb41f !important;
-    border-right: solid 3px #deb41f !important;
-    border-bottom: solid 3px #deb41f !important;
+    border-radius: 5px 5px 5px 5px !important;
+    border-top: solid 3px #0b0b10 !important;
+    border-left: solid 5px #deb41f !important;
+    border-right: solid 3px #0b0b10 !important;
+    border-bottom: solid 3px #0b0b10 !important;
 }
 div.floating-panel-bar {
     border-top: solid 1px #0b0b10 !important;
@@ -376,11 +406,15 @@ div.typeahead {
     background: #0b0b10 !important;
 }
 div.suggestion.selected {
-    background: #deb41f !important;
+    background: #1c1c27 !important;
+    padding-left: 40px !important;
+}
+.typeahead .suggestion .avatar {
+    padding-top: 5px !important;
 }
 /* DING MENU */
 #ding-menu {
-    background: #0b0b10 !important;
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
 }
 #ding-menu .option {
     background: linear-gradient(to bottom, #282835, #2f2f3c);
@@ -391,7 +425,11 @@ div.suggestion.selected {
 #ding-menu .split-option.option .description {
     background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
 }
-#ding-menu .option:not(.split-option):not(.disabled):hover, #ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
+#ding-menu .option:not(.split-option):not(.disabled):hover {
+    background-color: #1c1c27;
+    background: #1c1c27;
+}
+#ding-menu .option.selected, #ding-menu .split-option.option .option.selected, #ding-menu .option.on:active {
     background-color: #deb41f !important;
     background: #deb41f !important;
     background-image: linear-gradient(to bottom, #deb41f !important, #deb41f !important);
@@ -403,7 +441,7 @@ div.option.on, div.option.off {
     background: #0b0b10 !important;
 }
 #ding-menu .option {
-    background: #15151d !important;
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
 }
 #ding-menu .split-option.option, #ding-menu .split-option.option .description {
     background: #1c1c27 !important;
@@ -411,10 +449,10 @@ div.option.on, div.option.off {
 
 /* PMS */
 .pmGreyTop, div#privateChatIcon.pmGreyTop.hover, div.pmHeader.pmGreyTop {
-    background: #15151d !important;
-    border-top: solid 2px #deb41f !important;
-    border-left: solid 1px #deb41f !important;
-    border-right: solid 1px #deb41f !important;
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-top: solid 2px #0b0b10 !important;
+    border-left: solid 1px #0b0b10 !important;
+    border-right: solid 1px #0b0b10 !important;
 }
 form.message-input-view {
     background: #15151d !important;
@@ -460,14 +498,27 @@ a.conversation-user-room-link {
 li.option.checked, li.option.ignored-users, {
     color: white !important;
 }
-.options-menu .option:hover {
-    background: #deb41f !important;
+div.options-menu .option:hover {
+    background: #15151d !important;
 }
 .options-menu .option.checked:after {
     filter: brightness(4);
 }
 .striped-list>*, .conversations-list>ul>*, .message-history>*, .guest-list>* {
     border-bottom: solid 1px #0b0b10 !important;
+}
+#buddyListHeader {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    border-top: 0px solid #0b0b10 !important;
+    border-bottom: 0px solid #0b0b10 !important;
+}
+div#buddyListTitle {
+    color: white !important;
+    border-bottom: 0px solid #0b0b10 !important;
+}
+#buddyListContainer .conversations-list {
+    border-top: 0px solid #0b0b10;
+    border-bottom: 0px solid #0b0b10;
 }
 
 /* PROFILES */
@@ -493,7 +544,27 @@ li.option {
     color: white !important;
 }
 .floating-menu .option:not(.split-option):not(.disabled):hover {
-    background: #deb41f !important;
+    background: #15151d !important;
+}
+.fan-grid .fan .btn-group ul.dropdown-menu {
+    background: linear-gradient(to bottom, #282835, #2f2f3c);
+}
+a.ignore-action {
+    background: #1c1c27 !important;
+    color: white !important;
+}
+a.ignore-action:hover {
+    background: #15151d !important;
 }
 
 /* ETC */
+
+/* MOD TOOLS */
+.floating-menu .option:not(.split-option):not(.disabled) {
+    background: #1c1c27;
+    color: white !important;
+}
+.floating-menu .option:not(.split-option):not(.disabled):hover {
+    background: #1c1c27;
+    color: white !important;
+}
