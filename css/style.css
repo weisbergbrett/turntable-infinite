@@ -219,6 +219,9 @@ li.option.playlist.active, li.option.playlist:hover, .playlist-dropdown .new-pla
 div.title {
     color: white !important;
 }
+li.option.switch-menu, li.option.playlist-remove, li.option.move-bottom, li.option.site-add {
+    background: #1c1c27 !important;
+}
 
 /* ROOM */
 
