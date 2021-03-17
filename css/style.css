@@ -538,6 +538,9 @@ div.tooltip.avatar-tipsy.floating-menu.top.in {
     border-bottom: solid 0px #0b0b10 !important;
     -webkit-box-shadow: none !important;
 }
+div.tooltip.avatar-tipsy.floating-menu.in {
+    background: #0b0b10 !important;
+}
 div.option.special {
     background: #15151d !important;
     border-radius: 5px 5px 5px 5px !important;
