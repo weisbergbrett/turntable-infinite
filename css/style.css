@@ -567,3 +567,7 @@ a.ignore-action:hover {
     background: #1c1c27;
     color: white !important;
 }
+/* CURRENT SONG */
+#room-view > div.room-renderer.mouse-map > div:nth-child(1) {
+    filter: contrast(1.5);
+}
