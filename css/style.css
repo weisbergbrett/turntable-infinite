@@ -519,6 +519,9 @@ div#buddyListTitle {
     border-top: 0px solid #0b0b10;
     border-bottom: 0px solid #0b0b10;
 }
+ul.message-history {
+    background: #1c1c27;
+}
 
 /* PROFILES */
 div.tooltip.avatar-tipsy.floating-menu.top.in {
