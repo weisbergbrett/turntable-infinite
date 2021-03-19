@@ -277,7 +277,7 @@ a.creator, a {
 }
 /* BUTTONS */
 li.flat-button.room-info-link.recently-played-link, li.flat-button.room-info-link.trending-link, li.flat-button.room-info-link.guest-list-link {
-    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+    background: #1c1c27 !important;
     border-radius: 5px 5px 5px 5px !important;
     border: solid 2px #0b0b10 !important;
     -webkit-box-shadow: none !important;
@@ -285,7 +285,7 @@ li.flat-button.room-info-link.recently-played-link, li.flat-button.room-info-lin
 li.flat-button.room-info-link.recently-played-link:hover, li.flat-button.room-info-link.trending-link:hover, li.flat-button.room-info-link.guest-list-link:hover {
     background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
     border-radius: 5px 5px 5px 5px !important;
-    border: solid 2px #deb41f !important;
+    border: solid 2px #0b0b10 !important;
     -webkit-box-shadow: none !important;
 }
 h3 {
