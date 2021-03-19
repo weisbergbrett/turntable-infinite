@@ -3,7 +3,7 @@
 		"name": "Turntable Infinite",
 		"short_name": "Turntable Infinite",
 		"description": "A basic extension for Turntable.fm to bring strictly cosmetic UX/UI changes and additions.",
-		"version": "0.0.0.3",
+		"version": "0.0.0.4",
 		"author": "Brett Weisberg",
 		"icons": {
 				"16": "icons/16.png",
@@ -13,7 +13,7 @@
 		"content_scripts": [
 				{
 						"matches": ["https://turntable.fm/*"],
-						"js": ["js/tt8.js"],
+						"js": ["js/jquery.min.js", "js/tt8.js"],
 						"css": ["css/style.css"],
 						"run_at": "document_idle"
 				}
