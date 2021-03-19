@@ -493,6 +493,10 @@ div#buddyListTitle {
 div.conversation-username {
     color: #deb41f !important;
 }
+.pmContainer .conversation-view .message-input-view {
+    background: #0b0b10 !important;
+    -webkit-box-shadow: none !important;
+}
 a.conversation-user-room-link {
     color: white !important;
 }
