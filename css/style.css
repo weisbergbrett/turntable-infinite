@@ -142,6 +142,7 @@ li.logout {
 
 .tab-item {
     background: #0b0b10 !important;
+    -webkit-box-shadow: none !important;
 }
 .tab-item.selected {
     background: #deb41f !important;
@@ -317,6 +318,11 @@ div.song-list.trending-songs.sliding-nav-pane-content {
 /* PEOPLE HERE */
 .tabbed-panel .separator, ul.guest-list.sliding-nav-pane-content {
     background: #0b0b10 !important;
+    border-top: solid 0px #0b0b10 !important;
+}
+.sliding-nav .sliding-nav-pane-header {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 .tabbed-panel .separator .text {
     color: white !important;
@@ -573,6 +579,21 @@ h2.points-msg, h4.subtitle {
     color: white;
     font-weight: normal;
     text-shadow: none;
+}
+div.avatar.avatar-col.available:hover, div.avatar.avatar-col.locked:hover, div.footer, div.level, div.avatar.avatar-col.available.current-avatar {
+    background: #1c1c27 !important;
+}
+div.level, div.points-info, div.dj-name, span.bind-user-name {
+    color: white !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+div.avatar.avatar-col.available.current-avatar {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.choose-avatar-modal .carousel-indicators>li.active {
+    background: #deb41f !important;
 }
 
 /* ETC */
