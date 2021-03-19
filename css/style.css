@@ -419,6 +419,9 @@ div.suggestion.selected {
     background: #1c1c27 !important;
     padding-left: 40px !important;
 }
+div.suggestion.selected:hover {
+    background: linear-gradient(to bottom, #282835, #2f2f3c) !important;
+}
 .typeahead .suggestion .avatar {
     padding-top: 5px !important;
 }
