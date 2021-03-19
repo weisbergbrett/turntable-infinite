@@ -42,6 +42,44 @@ div.text {
     text-shadow: none;
 }
 
+/* STATIC PAGES */
+
+/* ROOMS */
+
+div#topBG {
+    background: #0b0b10 !important;
+}
+div#mainPanelHeader.lobby-panel-header {
+    background: #1c1c27 !important;
+}
+a#create-room.lobby-flat-button {
+    background: #1c1c27 !important;
+}
+.roomListItem .roomListBuddy .roomListBuddyIcon.isAvatar {
+    border: 1px solid #0b0b10 !important;
+    background-color: #2f2f3c !important;
+}
+div.buddyListTitle {
+    background: #1c1c27 !important;
+}
+div.buddyListRoom, div.buddyCount {
+    background: #1c1c27 !important;
+}
+div#buddyListHeader.lobby-panel-header {
+    background: #15151d !important;
+}
+div.buddyListTitleText, div.listenNow {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+div.listenNow {
+    background: #282835 !important;
+}
+div.listenNow:hover {
+    background: #15151d !important;
+}
+
 /* HEADER*/
 
 /* TOP BAR */
@@ -293,6 +331,11 @@ h3 {
 }
 li.flat-button.room-info-link.recently-played-link:after, li.flat-button.room-info-link.trending-link:after, li.flat-button.room-info-link.guest-list-link:after {
     filter: brightness(4);
+}
+div.description.default-message {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
 }
 /* RECENTLY PLAYED SONGS */
 div.sliding-nav-pane-title {
