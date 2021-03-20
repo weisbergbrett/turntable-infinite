@@ -296,6 +296,17 @@ li.option.switch-menu, li.option.playlist-remove, li.option.move-bottom, li.opti
 .song .progress {
     background-color: #31314c !important;
 }
+div#upload-view, span.title, div.floating-panel-header, div#upload-view, span.title, div.floating-panel-header {
+    background: #0b0b10 !important;
+}
+div.info, span.title {
+    color: white !important;
+    font-weight: normal;
+    text-shadow: none;
+}
+#upload-view {
+    top: 37px !important;
+}
 
 /* ROOM */
 
@@ -532,6 +543,12 @@ div#buddyListTitle {
     color: black !important;
     font-weight: normal;
     text-shadow: none;
+}
+#buddyList {
+    background: #0b0b10 !important;
+}
+.pm-unavailable-warning {
+    border-bottom: 0px solid #d3d3d3 !important;
 }
 div.conversation-username {
     color: #deb41f !important;
